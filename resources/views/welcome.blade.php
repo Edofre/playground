@@ -1,45 +1,17 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+@extends('layouts.main')
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ config('app.name') }}</title>
+@section('title')
+    Welcome
+@endsection
 
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-</head>
-
-<body>
-    <div>
-        @if (Route::has('login'))
-        <div>
-            @auth
-                <a href="{{ url('/home') }}">Home</a>
-            @else
-                <a class="bg-red-900 text-red-500" href="{{ route('login') }}">Login</a>
-                @if (Route::has('register'))
-                    <a class="btn btn-blue" href="{{ route('register') }}">Register</a>
-                @endif
-            @endauth
-        </div>
-        @endif
-
-        <div>
-            <div class="bg-black text-cyan">
-                Laravel
-            </div>
-            <div class="md:flex bg-white rounded-lg p-6">
-                <img class="h-16 w-16 md:h-24 md:w-24 rounded-full mx-auto md:mx-0 md:mr-6" src="https://via.placeholder.com/24">
-                <div class="text-center md:text-left">
-                    <h2 class="text-lg">Erin Lindford</h2>
-                    <div class="text-purple-500">Customer Support</div>
-                    <div class="text-gray-600">erinlindford@example.com</div>
-                    <div class="text-gray-600">(555) 765-4321</div>
-                    </div>
-                </div>
-        </div>
+@section('content')
+<div class="md:flex bg-white rounded-lg p-6">
+    <img class="h-16 w-16 md:h-24 md:w-24 rounded-full mx-auto md:mx-0 md:mr-6" src="https://via.placeholder.com/24">
+    <div class="text-center md:text-left">
+        <h2 class="text-lg">Erin Lindford</h2>
+        <div class="text-purple-500">Customer Support</div>
+        <div class="text-gray-600">erinlindford@example.com</div>
+        <div class="text-gray-600">(555) 765-4321</div>
     </div>
-</body>
-
-</html>
+</div>
+@endsection
