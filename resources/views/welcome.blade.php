@@ -17,9 +17,9 @@
             @auth
                 <a href="{{ url('/home') }}">Home</a>
             @else
-                <a class="bg-red" href="{{ route('login') }}">Login</a>
+                <a class="bg-red-900 text-red-500" href="{{ route('login') }}">Login</a>
                 @if (Route::has('register'))
-                    <a href="{{ route('register') }}">Register</a>
+                    <a class="btn btn-blue" href="{{ route('register') }}">Register</a>
                 @endif
             @endauth
         </div>
