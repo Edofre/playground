@@ -1,5 +1,13 @@
 @extends('layouts.app')
 
+@section('header')
+<div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+    <h1 class="text-3xl font-bold leading-tight text-gray-900">
+        {{ __('auth.register') }}
+    </h1>
+</div>
+@endsection
+
 @section('content')
 <form method="POST" action="{{ route('register') }}">
     @csrf
