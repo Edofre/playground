@@ -29,6 +29,7 @@ return [
     'forgot_password' => 'Forgot Your Password?',
     'forgot_your_password' => 'Forgot Your Password?',
     'remember_me' => 'Remember Me',
+    'dont_have_an_account' => 'Don\'t have an account?',
     'register' => 'Register',
     'click_here_to_request_another' => 'click here to request another',
     'verification_link_sent' => 'A fresh verification link has been sent to your email address.',

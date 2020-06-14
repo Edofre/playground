@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', __('auth.confirm_password'))
+
 @section('content')
 {{ __('auth.confirm_password_to_continue') }}
 

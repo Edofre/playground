@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', __('auth.send_password_reset_link'))
+
 @section('content')
 @if (session('status'))
 {{ session('status') }}
