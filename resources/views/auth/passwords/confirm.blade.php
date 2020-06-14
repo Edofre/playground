@@ -1,24 +1,24 @@
 @extends('layouts.app')
 
 @section('content')
-{{ __('Please confirm your password before continuing.') }}
+{{ __('auth.confirm_password_to_continue') }}
 
 <form method="POST" action="{{ route('password.confirm') }}">
     @csrf
 
-    <label for="password">{{ __('Password') }}</label>
+    <label for="password">{{ __('auth.password') }}</label>
     <input id="password" type="password" name="password" required autocomplete="current-password">
     @error('password')
     <strong>{{ $message }}</strong>
     @enderror
 
     <button type="submit">
-        {{ __('Confirm Password') }}
+        {{ __('auth.confirm_password') }}
     </button>
 
     @if (Route::has('password.request'))
     <a href="{{ route('password.request') }}">
-        {{ __('Forgot Your Password?') }}
+        {{ __('auth.forgot_password') }}
     </a>
     @endif
 </form>

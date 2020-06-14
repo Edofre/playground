@@ -5,23 +5,23 @@
     @csrf
     <input type="hidden" name="token" value="{{ $token }}">
 
-    <label for="email">{{ __('E-Mail Address') }}</label>
+    <label for="email">{{ __('auth.email') }}</label>
     <input id="email" type="email" name="email" value="{{ $email ?? old('email') }}" required autocomplete="email" autofocus>
     @error('email')
     <strong>{{ $message }}</strong>
     @enderror
 
-    <label for="password">{{ __('Password') }}</label>
+    <label for="password">{{ __('auth.password') }}</label>
     <input id="password" type="password" name="password" required autocomplete="new-password">
     @error('password')
     <strong>{{ $message }}</strong>
     @enderror
 
-    <label for="password-confirm">{{ __('Confirm Password') }}</label>
+    <label for="password-confirm">{{ __('auth.confirm_password') }}</label>
     <input id="password-confirm" type="password" name="password_confirmation" required autocomplete="new-password">
 
     <button type="submit">
-        {{ __('Reset Password') }}
+        {{ __('auth.reset_password') }}
     </button>
 </form>
 @endsection

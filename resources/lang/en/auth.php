@@ -18,4 +18,20 @@ return [
 
 
     'login' => 'Login',
+    'name' => 'Name',
+    'email' => 'E-Mail',
+    'password' => 'Password',
+    'confirm_password' => 'Confirm Password',
+
+    'reset_password' => 'Reset password',
+    'send_password_reset_link' => 'Send Password Reset Link',
+    'confirm_password_to_continue' => 'Please confirm your password before continuing.',
+    'forgot_password' => 'Forgot Your Password?',
+    'forgot_your_password' => 'Forgot Your Password?',
+    'remember_me' => 'Remember Me',
+    'register' => 'Register',
+    'click_here_to_request_another' => 'click here to request another',
+    'verification_link_sent' => 'A fresh verification link has been sent to your email address.',
+    'check_email_for_verification_link' => 'Before proceeding, please check your email for a verification link.',
+    'if_you_did_not_receive_email' => 'If you did not receive the email',
 ];
