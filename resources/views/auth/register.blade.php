@@ -1,8 +1,9 @@
-@extends('layouts.app')
+@extends('layouts.auth')
 
 @section('title', __('auth.registration'))
 
 @section('content')
+
 <div class="container mx-auto">
     <div class="flex flex-wrap justify-center">
         <div class="w-full max-w-sm">

@@ -1,8 +1,9 @@
-@extends('layouts.app')
+@extends('layouts.auth')
 
 @section('title', __('auth.confirm_password'))
 
 @section('content')
+
 {{ __('auth.confirm_password_to_continue') }}
 
 <form method="POST" action="{{ route('password.confirm') }}">
@@ -11,7 +12,7 @@
     <label for="password">{{ __('auth.password') }}</label>
     <input id="password" type="password" name="password" required autocomplete="current-password">
     @error('password')
-    <strong>{{ $message }}</strong>
+        <strong>{{ $message }}</strong>
     @enderror
 
     <button type="submit">

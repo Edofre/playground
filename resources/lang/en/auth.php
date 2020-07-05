@@ -32,7 +32,7 @@ return [
     'dont_have_an_account'              => 'Don\'t have an account?',
     'register'                          => 'Register',
     'registration'                      => 'Registration',
-    'click_here_to_request_another'     => 'click here to request another',
+    'click_here_to_request_another'     => 'Click here to request another',
     'verification_link_sent'            => 'A fresh verification link has been sent to your email address.',
     'check_email_for_verification_link' => 'Before proceeding, please check your email for a verification link.',
     'if_you_did_not_receive_email'      => 'If you did not receive the email',

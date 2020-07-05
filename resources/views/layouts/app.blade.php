@@ -21,7 +21,7 @@
                     <div class="flex items-center">
                         <div class="flex-shrink-0">
                             <!-- <img class="h-8 w-8" src="/img/logos/workflow-mark-on-dark.svg" alt="Workflow logo" /> -->
-                            <div class="text-white underline">{{ config('app.name', 'Laravel') }}</div>
+                            <a href="/" class="text-white underline">{{ config('app.name', 'Laravel') }}</a>
                         </div>
                         <div class="hidden md:block">
                             <div class="ml-10 flex items-baseline">
