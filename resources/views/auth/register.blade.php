@@ -55,7 +55,7 @@
                         <label for="password_confirmation" class="block text-gray-700 text-sm font-bold mb-2 sr-only">
                             {{ __('auth.password_confirmation') }}
                         </label>
-                        <input id="password_confirmation" type="password_confirmation" class="form-input w-full @error('password_confirmation') border-red-500 @enderror" placeholder="{{ __('auth.password_confirmation') }}" name="password_confirmation" required autocomplete="new-password" autofocus>
+                        <input id="password_confirmation" type="password" class="form-input w-full @error('password_confirmation') border-red-500 @enderror" placeholder="{{ __('auth.password_confirmation') }}" name="password_confirmation" required autocomplete="new-password" autofocus>
                         @error('password_confirmation')
                         <p class="text-red-500 text-xs italic mt-1">
                             {{ $message }}
