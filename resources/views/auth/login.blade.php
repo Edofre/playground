@@ -8,7 +8,7 @@
         <div class="w-full max-w-sm">
             <div class="flex flex-col break-words bg-white border rounded shadow-md">
 
-                <div class="font-semibold bg-gray-200 text-gray-700 py-3 px-6 mb-0">
+                <div class="font-semibold bg-gray-200 text-gray-700 py-3 px-6 mb-1">
                     {{ __('auth.login') }}
                 </div>
 
@@ -39,7 +39,7 @@
                         @enderror
                     </div>
 
-                    <div class="flex mb-3">
+                    <div class="flex">
                         <label class="inline-flex items-center text-sm text-gray-700" for="remember">
                             <input type="checkbox" name="remember" id="remember" class="form-checkbox" {{ old('remember') ? 'checked' : '' }}>
                             <span class="ml-2">{{ __('auth.remember_me') }}</span>
