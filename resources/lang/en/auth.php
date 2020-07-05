@@ -28,6 +28,7 @@ return [
     'forgot_password'                   => 'Forgot Your Password?',
     'forgot_your_password'              => 'Forgot Your Password?',
     'remember_me'                       => 'Remember Me',
+    'back_to_login'                     => 'Back to login page',
     'dont_have_an_account'              => 'Don\'t have an account?',
     'register'                          => 'Register',
     'registration'                      => 'Registration',
