@@ -24,11 +24,21 @@
                     </div>
                     <div class="hidden md:block">
                         <div class="ml-10 flex items-baseline">
-                            <a href="/" class="px-3 py-2 rounded-md text-sm font-medium text-white bg-gray-900 focus:outline-none focus:text-white focus:bg-gray-700">
+                            <a href="/" 
+                                class="px-3 py-2 rounded-md text-sm font-medium focus:outline-none {{ request()->routeIs('dashboard.*') ? 'text-white bg-gray-900 focus:text-white focus:bg-gray-700' : 'hover:text-white hover:bg-gray-700 text-gray-300 focus:text-white focus:bg-gray-700' }}">
                                 Dashboard
                             </a>
-                            <a href="{{ route('activities.index') }}" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">
+                            <a href="{{ route('activities.index') }}" 
+                                class="ml-4 px-3 py-2 rounded-md text-sm font-medium focus:outline-none {{ request()->routeIs('activities.*') ? 'text-white bg-gray-900 focus:text-white focus:bg-gray-700' : 'hover:text-white hover:bg-gray-700 text-gray-300 focus:text-white focus:bg-gray-700' }} ">
                                 {{ __('activity.activities') }}
+                            </a>
+                            <a href="{{ route('categories.index') }}" 
+                                class="ml-4 px-3 py-2 rounded-md text-sm font-medium focus:outline-none {{ request()->routeIs('categories.*') ? 'text-white bg-gray-900 focus:text-white focus:bg-gray-700' : 'hover:text-white hover:bg-gray-700 text-gray-300 focus:text-white focus:bg-gray-700' }} ">
+                                {{ __('category.categories') }}
+                            </a>
+                            <a href="{{ route('tags.index') }}" 
+                                class="ml-4 px-3 py-2 rounded-md text-sm font-medium focus:outline-none {{ request()->routeIs('tags.*') ? 'text-white bg-gray-900 focus:text-white focus:bg-gray-700' : 'hover:text-white hover:bg-gray-700 text-gray-300 focus:text-white focus:bg-gray-700' }} ">
+                                {{ __('tag.tags') }}
                             </a>
                             <!--
                                 <a href="#" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">
