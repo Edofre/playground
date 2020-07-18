@@ -40,16 +40,6 @@
                                 class="ml-4 px-3 py-2 rounded-md text-sm font-medium focus:outline-none {{ request()->routeIs('tags.*') ? 'text-white bg-gray-900 focus:text-white focus:bg-gray-700' : 'hover:text-white hover:bg-gray-700 text-gray-300 focus:text-white focus:bg-gray-700' }} ">
                                 {{ __('tag.tags') }}
                             </a>
-                            <!--
-                                <a href="#" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">
-                                    Projects
-                                </a>
-                                <a href="#" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">
-                                    Calendar
-                                </a>
-                                <a href="#" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">
-                                    Reports
-                                </a> -->
                         </div>
                     </div>
                 </div>
@@ -116,20 +106,17 @@
 
         <div :class="{ hidden: menu === false, 'md:hidden': menu === false, block: menu === true }" class="hidden md:hidden">
             <div class="px-2 pt-2 pb-3 sm:px-3">
-                <a href="/" class="block px-3 py-2 rounded-md text-base font-medium text-white bg-gray-900 focus:outline-none focus:text-white focus:bg-gray-700">
+                <a href="/" class="block px-3 py-2 rounded-md text-base font-medium {{ request()->routeIs('dashboard.*') ? 'text-white bg-gray-900 focus:outline-none focus:text-white focus:bg-gray-700' : 'text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700'}}">
                     Dashboard
                 </a>
-                <a href="{{ route('activities.index') }}" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">
+                <a href="{{ route('activities.index') }}" class="mt-1 block px-3 py-2 rounded-md text-base font-medium {{ request()->routeIs('activities.*') ? 'text-white bg-gray-900 focus:outline-none focus:text-white focus:bg-gray-700' : 'text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700'}}">
                     {{ __('activity.activities') }}
                 </a>
-                <a href="#" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">
-                    Projects
+                <a href="{{ route('categories.index') }}" class="mt-1 block px-3 py-2 rounded-md text-base font-medium {{ request()->routeIs('categories.*') ? 'text-white bg-gray-900 focus:outline-none focus:text-white focus:bg-gray-700' : 'text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700'}}">
+                    {{ __('category.categories') }}
                 </a>
-                <a href="#" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">
-                    Calendar
-                </a>
-                <a href="#" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">
-                    Reports
+                <a href="{{ route('tags.index') }}" class="mt-1 block px-3 py-2 rounded-md text-base font-medium {{ request()->routeIs('tags.*') ? 'text-white bg-gray-900 focus:outline-none focus:text-white focus:bg-gray-700' : 'text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700'}}">
+                    {{ __('tag.tags') }}
                 </a>
             </div>
             <div class="pt-4 pb-3 border-t border-gray-700">
