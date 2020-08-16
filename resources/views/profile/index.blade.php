@@ -11,7 +11,7 @@
             <h2 class="text-xl text-gray-700">Edo Freriks</h2>
             <div class="text-green-500">Software developer</div>
 
-            <div class="text-gray-700 sm:mt-0 md:mt-4">
+            <div class="text-gray-700 mt-0 md:mt-4 space-x-1">
                 <a href="https://github.com/edofre"><i class="fab fa-github hover:text-green-500"></i></a>
                 <a href="https://www.linkedin.com/in/edo-freriks/"><i class="fab fa-linkedin-in hover:text-green-500"></i></a>
                 <a href="https://twitter.com/edofre"><i class="fab fa-twitter hover:text-green-500"></i></a>
