@@ -10,8 +10,12 @@
 
         <h1>Edo Freriks</h1>
 
-        <div>
-        
+        <div >
+            <i class="fab fa-github"></i>
+            <i class="fab fa-linkedin-in"></i>
+            <i class="fab fa-twitter"></i>
+
+            <i class="fas fa-at"></i>
         </div>
     </div>
 </div>
