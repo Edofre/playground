@@ -1,4 +1,5 @@
 window.Vue = require('vue');
+window.axios = require('axios');
 
 // Import alpinejs
 import 'alpinejs';

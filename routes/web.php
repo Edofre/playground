@@ -12,6 +12,4 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::resource('activities', 'ActivityController');
     // Route::resource('categories', 'CategoryController');
     // Route::resource('tags', 'TagController');
-
-    Route::resource('passport', 'PassportController');
 });
