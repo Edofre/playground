@@ -23,22 +23,69 @@
 
     <div class="flex mt-4 bg-white rounded-lg p-6">
         <div class="w-1/2">
-            <h2 class="text-xl text-gray-700">Skills</h2>
-
+            <h2 class="text-xl text-gray-700">Languages</h2>
             <div class="text-gray-700 mt-2 md:mt-4">
-                <ul class="list-disc list-inside">
-                    <li>Laravel</li>
+                <ul class="list-disc list-inside text-green-500">
+                    <li><span class="text-gray-700">PHP</span></li>
+                    <li><span class="text-gray-700">SQL</span></li>
+                    <li><span class="text-gray-700">Javascript</span></li>
+                    <li><span class="text-gray-700">VueJS</span></li>
                 </ul>
             </div>
         </div>
 
         <div class="w-1/2">
-            <h2 class="text-xl text-gray-700">Ook</h2>
-
+            <h2 class="text-xl text-gray-700">Frameworks</h2>
             <div class="mt-2 md:mt-4">
                 <ul class="list-disc list-inside text-green-500">
-                    <li class=""><span class="text-gray-700">VueJS</span></li>
+                    <li><span class="text-gray-700">Laravel</span></li>
+                    <li><span class="text-gray-700">Symfony</span></li>
+                    <li><span class="text-gray-700">Yii</span></li>
+                    <li><span class="text-gray-700">Nuxt</span></li>
                 </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex mt-4 bg-white rounded-lg p-6">
+        <div class="w-full">
+            <h2 class="text-xl text-gray-700">Education & courses</h2>
+            <div class="text-gray-700 mt-2 md:mt-4">
+
+                <div class="max-w rounded overflow-hidden shadow-lg px-6 py-4">
+                    <div class="w-full">
+                        <div class="flex">
+                            <div class="w-3/4 text-lg text-gray-700 mb-2">
+                                Hanzehogeschool Groningen
+                            </div>
+                            <div class="w-1/4 text-right text-gray-500">
+                                2008 - 2012
+                            </div>
+                        </div>
+                        <p class="text-green-500">
+                            Bachelor of Information and Communication Technology
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex mt-4 bg-white rounded-lg p-6">
+        <div class="w-full">
+            <h2 class="text-xl text-gray-700">Work experience</h2>
+            <div class="text-gray-700 mt-2 md:mt-4">
+
+                <div class="max-w rounded overflow-hidden shadow-lg">
+                    <div class="px-6 py-4">
+                        <div class="text-lg text-gray-700 mb-2">
+                            Lajos
+                        </div>
+                        <p class="text-green-500">
+                            Test
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
