@@ -32,14 +32,14 @@
                                 class="ml-4 px-3 py-2 rounded-md text-sm font-medium focus:outline-none {{ request()->routeIs('activities.*') ? 'text-white bg-gray-900 focus:text-white focus:bg-gray-700' : 'hover:text-white hover:bg-gray-700 text-gray-300 focus:text-white focus:bg-gray-700' }} ">
                                 {{ __('activity.activities') }}
                             </a>
-                            <a href="{{ route('categories.index') }}" 
+                            {{-- <a href="{{ route('categories.index') }}" 
                                 class="ml-4 px-3 py-2 rounded-md text-sm font-medium focus:outline-none {{ request()->routeIs('categories.*') ? 'text-white bg-gray-900 focus:text-white focus:bg-gray-700' : 'hover:text-white hover:bg-gray-700 text-gray-300 focus:text-white focus:bg-gray-700' }} ">
                                 {{ __('category.categories') }}
                             </a>
                             <a href="{{ route('tags.index') }}" 
                                 class="ml-4 px-3 py-2 rounded-md text-sm font-medium focus:outline-none {{ request()->routeIs('tags.*') ? 'text-white bg-gray-900 focus:text-white focus:bg-gray-700' : 'hover:text-white hover:bg-gray-700 text-gray-300 focus:text-white focus:bg-gray-700' }} ">
                                 {{ __('tag.tags') }}
-                            </a>
+                            </a> --}}
                         </div>
                     </div>
                 </div>
@@ -112,12 +112,12 @@
                 <a href="{{ route('activities.index') }}" class="mt-1 block px-3 py-2 rounded-md text-base font-medium {{ request()->routeIs('activities.*') ? 'text-white bg-gray-900 focus:outline-none focus:text-white focus:bg-gray-700' : 'text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700'}}">
                     {{ __('activity.activities') }}
                 </a>
-                <a href="{{ route('categories.index') }}" class="mt-1 block px-3 py-2 rounded-md text-base font-medium {{ request()->routeIs('categories.*') ? 'text-white bg-gray-900 focus:outline-none focus:text-white focus:bg-gray-700' : 'text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700'}}">
+                {{-- <a href="{{ route('categories.index') }}" class="mt-1 block px-3 py-2 rounded-md text-base font-medium {{ request()->routeIs('categories.*') ? 'text-white bg-gray-900 focus:outline-none focus:text-white focus:bg-gray-700' : 'text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700'}}">
                     {{ __('category.categories') }}
                 </a>
                 <a href="{{ route('tags.index') }}" class="mt-1 block px-3 py-2 rounded-md text-base font-medium {{ request()->routeIs('tags.*') ? 'text-white bg-gray-900 focus:outline-none focus:text-white focus:bg-gray-700' : 'text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700'}}">
                     {{ __('tag.tags') }}
-                </a>
+                </a> --}}
             </div>
             <div class="pt-4 pb-3 border-t border-gray-700">
                 <div class="flex items-center px-5">
