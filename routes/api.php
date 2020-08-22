@@ -16,8 +16,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/test', 'Api\TestController@index')->name('api.test.index');
 
+Route::middleware('auth:sanctum')
+    ->get('/protected/test', function (Request $request) {
+        return $request->user();
+    })
+    ->name('api.test.protected.index');
+
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
-
-
