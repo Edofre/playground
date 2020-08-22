@@ -22,6 +22,15 @@
     </div>
 
     <div class="flex mt-4 bg-white rounded-lg p-6">
+        <div class="w-full">
+            <h2 class="text-xl text-gray-700">About me</h2>
+            <div class="text-gray-700 mt-2 md:mt-4">
+                Not sure what to write
+            </div>
+        </div>
+    </div>
+
+    <div class="flex mt-4 bg-white rounded-lg p-6">
         <div class="w-1/2">
             <h2 class="text-xl text-gray-700">Languages</h2>
             <div class="text-gray-700 mt-2 md:mt-4">
