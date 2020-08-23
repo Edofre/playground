@@ -1,6 +1,5 @@
 <?php
 
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,14 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/test', 'Api\TestController@index')->name('api.test.index');
+Route::get('/test', 'Api\TestController@index')
+    ->name('api.test.index');
 
-Route::middleware('auth:sanctum')
-    ->get('/protected/test', function (Request $request) {
-        return $request->user();
-    })
-    ->name('api.test.protected');
-
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+Route::middleware(['auth:sanctum'])->group(function () {
+    Route::post('/protected/test', 'Api\TestController@protectedIndex')
+        ->name('api.protected.test.index');
 });

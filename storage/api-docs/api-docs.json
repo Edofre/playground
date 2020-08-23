@@ -29,12 +29,56 @@
                 "operationId": "testIndex",
                 "responses": {
                     "200": {
-                        "description": "Successful operation"
-                    },
-                    "401": {
-                        "description": "Unauthenticated"
+                        "description": "Successful operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
                     }
                 }
+            }
+        },
+        "/protected/test": {
+            "post": {
+                "tags": [
+                    "Test"
+                ],
+                "summary": "Testing protected route summary",
+                "description": "Testing proteced route description",
+                "operationId": "protectedTestIndex",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "securitySchemes": {
+            "bearerAuth": {
+                "type": "http",
+                "description": "Laravel Sanctum Bearer",
+                "scheme": "bearer"
             }
         }
     },
