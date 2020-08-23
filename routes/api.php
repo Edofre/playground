@@ -20,7 +20,7 @@ Route::middleware('auth:sanctum')
     ->get('/protected/test', function (Request $request) {
         return $request->user();
     })
-    ->name('api.test.protected.index');
+    ->name('api.test.protected');
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
