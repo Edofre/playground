@@ -16,7 +16,8 @@
         "laravel/framework": "^7.0",
         "laravel/sanctum": "^2.4",
         "laravel/tinker": "^2.0",
-        "laravel/ui": "^2.0"
+        "laravel/ui": "^2.0",
+        "edofre/laravel-file-cleanup": "*"
     },
     "require-dev": {
         "facade/ignition": "^2.0",
@@ -25,6 +26,12 @@
         "nunomaduro/collision": "^4.1",
         "phpunit/phpunit": "^8.5"
     },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../packages/laravel-file-cleanup"
+        }
+    ],
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
