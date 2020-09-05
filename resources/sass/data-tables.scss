@@ -1,7 +1,15 @@
 /* Form fields*/
 .dataTables_wrapper select,
 .dataTables_wrapper .dataTables_filter input {
-    @apply text-gray-700 pl-4 pr-4 pt-2 pb-2 leading-tight border-2 border-gray-200 bg-gray-200;
+    @apply text-gray-700 pl-2 pr-2 pt-1 pb-1 leading-tight border-2 border-gray-200 bg-gray-200;
+}
+
+.dataTables_filter {
+    @apply ml-auto;
+}
+
+.dataTables_paginate {
+    @apply ml-auto;
 }
 
 /* Row Hover*/
