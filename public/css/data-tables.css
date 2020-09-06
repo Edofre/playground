@@ -28,6 +28,10 @@
   margin-left: 0.5rem;
 }
 
+.dataTables_length select {
+  cursor: pointer;
+}
+
 .dataTables_paginate {
   margin-left: auto;
 }
@@ -39,7 +43,6 @@ table.dataTable.display tbody tr:hover {
   --bg-opacity: 1;
   background-color: #ebf4ff;
   background-color: rgba(235, 244, 255, var(--bg-opacity));
-  cursor: pointer;
 }
 
 /* Pagination Buttons*/
@@ -49,7 +52,12 @@ table.dataTable.display tbody tr:hover {
   border-radius: 0.25rem;
   border-width: 1px;
   border-color: transparent;
-  padding: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  margin: 0.25rem;
+  cursor: pointer;
 }
 
 /* Pagination Buttons - Current selected */
