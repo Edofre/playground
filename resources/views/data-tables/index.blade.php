@@ -486,7 +486,6 @@
         </tfoot>
     </table>
 </div>
-
 @endsection
 
 
@@ -496,7 +495,7 @@
         var table = $('#example').DataTable({
             responsive: true,
             stateSave: true,
-            dom: '<"flex mb-2"lf>t<"flex mt-2"ip>',
+            dom: 'r<"flex mb-2"lf>t<"flex mt-2"ip>',
             processing: true,
             serverSide: true,
             ajax: '{{ route('data-tables.data') }}',
@@ -511,6 +510,8 @@
             })
             .columns.adjust()
             .responsive.recalc();
+
+        table.processing(true);
     });
 
 </script>
