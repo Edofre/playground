@@ -17,7 +17,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
+            {{-- <tr>
                 <td>Tiger Nixon</td>
                 <td>System Architect</td>
                 <td>Edinburgh</td>
@@ -472,7 +472,7 @@
                 <td>27</td>
                 <td>2011/01/25</td>
                 <td>$112,000</td>
-            </tr>
+            </tr> --}}
         </tbody>
         <tfoot>
             <tr>
@@ -494,8 +494,20 @@
 <script type="text/javascript">
     $(document).ready(function() {
         var table = $('#example').DataTable({
-                responsive: true,
-                dom: '<"flex mb-2"lf>t<"flex mt-2"ip>'
+            responsive: true,
+            stateSave: true,
+            dom: '<"flex mb-2"lf>t<"flex mt-2"ip>',
+            processing: true,
+            serverSide: true,
+            ajax: '{{ route('data-tables.data') }}',
+            columns: [
+                { data: 'name', name: 'name' },
+                { data: 'position', name: 'position' },
+                { data: 'office', name: 'office' },
+                { data: 'age', name: 'age' },
+                { data: 'start_date', name: 'start_date' },
+                { data: 'salary', name: 'salary' },
+            ],
             })
             .columns.adjust()
             .responsive.recalc();
