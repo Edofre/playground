@@ -17,10 +17,15 @@
   --bg-opacity: 1;
   background-color: #edf2f7;
   background-color: rgba(237, 242, 247, var(--bg-opacity));
+  border-radius: 0.25rem;
 }
 
 .dataTables_filter {
   margin-left: auto;
+}
+
+.dataTables_filter input {
+  margin-left: 0.5rem;
 }
 
 .dataTables_paginate {
@@ -34,6 +39,7 @@ table.dataTable.display tbody tr:hover {
   --bg-opacity: 1;
   background-color: #ebf4ff;
   background-color: rgba(235, 244, 255, var(--bg-opacity));
+  cursor: pointer;
 }
 
 /* Pagination Buttons*/
@@ -43,6 +49,7 @@ table.dataTable.display tbody tr:hover {
   border-radius: 0.25rem;
   border-width: 1px;
   border-color: transparent;
+  padding: 0.5rem;
 }
 
 /* Pagination Buttons - Current selected */

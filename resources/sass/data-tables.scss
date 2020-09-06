@@ -1,11 +1,15 @@
 /* Form fields*/
 .dataTables_wrapper select,
 .dataTables_wrapper .dataTables_filter input {
-    @apply text-gray-700 pl-2 pr-2 pt-1 pb-1 leading-tight border-2 border-gray-200 bg-gray-200;
+    @apply text-gray-700 pl-2 pr-2 pt-1 pb-1 leading-tight border-2 border-gray-200 bg-gray-200 rounded;
 }
 
 .dataTables_filter {
     @apply ml-auto;
+
+    input {
+        @apply ml-2
+    }
 }
 
 .dataTables_paginate {
@@ -16,11 +20,13 @@
 table.dataTable.hover tbody tr:hover,
 table.dataTable.display tbody tr:hover {
     @apply bg-indigo-100;
+    @apply cursor-pointer;
 }
 
 /* Pagination Buttons*/
 .dataTables_wrapper .dataTables_paginate .paginate_button {
     @apply font-bold rounded border border-transparent;
+    @apply p-2;
 }
 
 /* Pagination Buttons - Current selected */

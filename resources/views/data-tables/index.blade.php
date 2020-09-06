@@ -495,7 +495,7 @@
     $(document).ready(function() {
         var table = $('#example').DataTable({
                 responsive: true,
-                dom: '<"flex"lf>t<"flex"ip>'
+                dom: '<"flex mb-2"lf>t<"flex mt-2"ip>'
             })
             .columns.adjust()
             .responsive.recalc();
