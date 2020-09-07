@@ -55,13 +55,16 @@ table.dataTable.display tbody tr:hover {
 
 /* Add padding to bottom border */
 table.dataTable.no-footer {
-    border-bottom: 1px solid #e2e8f0; /*border-b-1 border-gray-300*/
-    margin-top: 0.75em;
-    margin-bottom: 0.75em;
+    @apply border-b-2 border-gray-300;
 }
 
 /* Change colour of responsive icon*/
-table.dataTable.dtr-inline.collapsed > tbody > tr > td:first-child:before,
-table.dataTable.dtr-inline.collapsed > tbody > tr > th:first-child:before {
-    background-color: #667eea !important; /*bg-indigo-500*/
+table.dataTable.dtr-inline.collapsed > tbody > tr[role='row'] > td.dtr-control:before,
+table.dataTable.dtr-inline.collapsed > tbody > tr[role='row'] > th.dtr-control:before {
+    @apply bg-indigo-500;
+}
+
+table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td.dtr-control:before,
+table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th.dtr-control:before {
+    @apply bg-red-400;
 }
