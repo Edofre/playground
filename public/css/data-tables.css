@@ -90,9 +90,15 @@ table.dataTable.display tbody tr:hover {
   border-color: transparent;
 }
 
+/* Pagination Buttons - Current selected */
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled {
+  cursor: not-allowed;
+}
+
 /* Pagination Buttons - Hover */
 
-.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+.dataTables_wrapper .dataTables_paginate .paginate_button:not(.disabled):hover {
   --text-opacity: 1;
   color: #fff;
   color: rgba(255, 255, 255, var(--text-opacity));

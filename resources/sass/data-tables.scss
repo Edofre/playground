@@ -43,8 +43,13 @@ table.dataTable.display tbody tr:hover {
     @apply text-white shadow font-bold rounded bg-indigo-500 border border-transparent;
 }
 
+/* Pagination Buttons - Current selected */
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled {
+    @apply cursor-not-allowed;
+}
+
 /* Pagination Buttons - Hover */
-.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+.dataTables_wrapper .dataTables_paginate .paginate_button:not(.disabled):hover {
     @apply text-white shadow font-bold rounded bg-indigo-500 border border-transparent;
 }
 
