@@ -495,10 +495,13 @@
         var table = $('#example').DataTable({
             responsive: true,
             stateSave: true,
-            dom: 'r<"flex mb-2"lf>t<"flex mt-2"ip>',
+            dom: '<"flex mb-2"lf>rt<"flex mt-2"ip>',
             processing: true,
             serverSide: true,
             ajax: '{{ route('data-tables.data') }}',
+            language: {
+                processing: '<i class="fas fa-spinner fa-spin"></i> Processing...'
+            },
             columns: [
                 { data: 'name', name: 'name' },
                 { data: 'position', name: 'position' },

@@ -18,7 +18,7 @@
 }
 
 .dataTables_processing {
-    @apply w-full h-full fixed block top-0 left-0 bg-white opacity-75 z-50;
+    @apply mx-auto fixed block rounded p-2 text-center bg-gray-200 z-50;
 }
 
 .dataTables_paginate {
