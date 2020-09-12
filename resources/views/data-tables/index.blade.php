@@ -5,6 +5,9 @@
 @section('content')
 
 <div class="px-4 py-6 sm:px-0">
+
+    <h1>DataTables</h1>
+
     <table id="example" class="display" style="width:100%">
         <thead>
             <tr>
