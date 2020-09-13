@@ -7,6 +7,7 @@
 /* Filter field */
 .dataTables_filter {
     @apply ml-auto;
+
     input {
         @apply ml-2;
     }
@@ -33,35 +34,63 @@ table.dataTable.display tbody tr:hover {
 /* Pagination bloc */
 .dataTables_paginate {
     @apply ml-auto;
+    @apply relative z-0 inline-flex shadow-sm;
 }
 
-/* Pagination Buttons */
+/* Pagination Buttons Previous / Next */
+.dataTables_wrapper .dataTables_paginate .paginate_button.next,
+.dataTables_wrapper .dataTables_paginate .paginate_button.previous {
+    @apply relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm leading-5 font-medium text-gray-500 transition ease-in-out duration-150;
+
+    &:hover {
+        @apply text-gray-400;
+    }
+
+    &:focus {
+        @apply outline-none border-blue-300 shadow-outline-blue z-10;
+    }
+
+    &:active {
+        @apply bg-gray-100 text-gray-500;
+    }
+}
+
+
 .dataTables_wrapper .dataTables_paginate .paginate_button {
+    @apply -ml-px relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm leading-5 font-medium text-gray-700 transition ease-in-out duration-150;
+
+    &:hover {
+        @apply text-gray-500;
+    }
+
+    &:focus {
+        @apply z-10 outline-none border-blue-300 shadow-outline-blue
+    }
+
+    &:active {
+        @apply bg-gray-100 text-gray-700
+    }
 }
 
 /* Pagination Buttons - Current selected */
-.dataTables_wrapper .dataTables_paginate .paginate_button.current {
-}
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {}
 
 /* Pagination Buttons - Disabled */
-.dataTables_wrapper .dataTables_paginate .paginate_button.disabled {
-}
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled {}
 
 /* Pagination Buttons - Hover */
-.dataTables_wrapper .dataTables_paginate .paginate_button:not(.disabled):hover {
-}
+.dataTables_wrapper .dataTables_paginate .paginate_button:not(.disabled):hover {}
 
 /* Add padding to bottom border */
-table.dataTable.no-footer {
-}
+table.dataTable.no-footer {}
 
 /* Change colour of responsive icon*/
-table.dataTable.dtr-inline.collapsed > tbody > tr[role='row'] > td.dtr-control:before,
-table.dataTable.dtr-inline.collapsed > tbody > tr[role='row'] > th.dtr-control:before {
+table.dataTable.dtr-inline.collapsed>tbody>tr[role='row']>td.dtr-control:before,
+table.dataTable.dtr-inline.collapsed>tbody>tr[role='row']>th.dtr-control:before {
     @apply bg-indigo-500;
 }
 
-table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td.dtr-control:before,
-table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th.dtr-control:before {
+table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td.dtr-control:before,
+table.dataTable.dtr-inline.collapsed>tbody>tr.parent>th.dtr-control:before {
     @apply bg-red-400;
 }
