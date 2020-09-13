@@ -4,9 +4,9 @@
 
 @section('content')
 
-<div class="px-4 py-6 sm:px-0">
+<div class="px-4 sm:px-0">
 
-    <h1>DataTables</h1>
+    <h1 class="text-xl font-bold mb-2 text-gray-900">DataTables</h1>
 
     <table id="example" class="display" style="width:100%">
         <thead>

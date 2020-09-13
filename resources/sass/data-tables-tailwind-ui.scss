@@ -1,0 +1,67 @@
+/* Input fields*/
+.dataTables_wrapper select,
+.dataTables_wrapper .dataTables_filter input {
+    @apply text-gray-700 pl-2 pr-2 pt-1 pb-1 leading-tight border-2 border-gray-200 bg-gray-200 rounded;
+}
+
+/* Filter field */
+.dataTables_filter {
+    @apply ml-auto;
+    input {
+        @apply ml-2;
+    }
+}
+
+/* Number of results input */
+.dataTables_length {
+    select {
+        @apply cursor-pointer;
+    }
+}
+
+/* Processing layover */
+.dataTables_processing {
+    @apply mx-auto fixed block rounded p-2 text-center bg-gray-200 z-50;
+}
+
+/* Row Hover */
+table.dataTable.hover tbody tr:hover,
+table.dataTable.display tbody tr:hover {
+    @apply bg-indigo-100;
+}
+
+/* Pagination bloc */
+.dataTables_paginate {
+    @apply ml-auto;
+}
+
+/* Pagination Buttons */
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+}
+
+/* Pagination Buttons - Current selected */
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+}
+
+/* Pagination Buttons - Disabled */
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled {
+}
+
+/* Pagination Buttons - Hover */
+.dataTables_wrapper .dataTables_paginate .paginate_button:not(.disabled):hover {
+}
+
+/* Add padding to bottom border */
+table.dataTable.no-footer {
+}
+
+/* Change colour of responsive icon*/
+table.dataTable.dtr-inline.collapsed > tbody > tr[role='row'] > td.dtr-control:before,
+table.dataTable.dtr-inline.collapsed > tbody > tr[role='row'] > th.dtr-control:before {
+    @apply bg-indigo-500;
+}
+
+table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td.dtr-control:before,
+table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th.dtr-control:before {
+    @apply bg-red-400;
+}

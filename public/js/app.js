@@ -259,26 +259,26 @@ eval("// removed by extract-text-webpack-plugin//# sourceURL=[module]\n//# sourc
 
 /***/ }),
 
-/***/ "./resources/sass/data-tables.scss":
-/*!*****************************************!*\
-  !*** ./resources/sass/data-tables.scss ***!
-  \*****************************************/
+/***/ "./resources/sass/data-tables-tailwind-ui.scss":
+/*!*****************************************************!*\
+  !*** ./resources/sass/data-tables-tailwind-ui.scss ***!
+  \*****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("// removed by extract-text-webpack-plugin//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvc2Fzcy9kYXRhLXRhYmxlcy5zY3NzP2RjMzciXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEiLCJmaWxlIjoiLi9yZXNvdXJjZXMvc2Fzcy9kYXRhLXRhYmxlcy5zY3NzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiLy8gcmVtb3ZlZCBieSBleHRyYWN0LXRleHQtd2VicGFjay1wbHVnaW4iXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./resources/sass/data-tables.scss\n");
+eval("// removed by extract-text-webpack-plugin//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvc2Fzcy9kYXRhLXRhYmxlcy10YWlsd2luZC11aS5zY3NzPzc1ZTAiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEiLCJmaWxlIjoiLi9yZXNvdXJjZXMvc2Fzcy9kYXRhLXRhYmxlcy10YWlsd2luZC11aS5zY3NzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiLy8gcmVtb3ZlZCBieSBleHRyYWN0LXRleHQtd2VicGFjay1wbHVnaW4iXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./resources/sass/data-tables-tailwind-ui.scss\n");
 
 /***/ }),
 
 /***/ 0:
-/*!***********************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/data-tables.scss ./resources/sass/app.scss ***!
-  \***********************************************************************************************/
+/*!***********************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/data-tables-tailwind-ui.scss ./resources/sass/app.scss ***!
+  \***********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! /home/vagrant/playground/resources/js/app.js */"./resources/js/app.js");
-__webpack_require__(/*! /home/vagrant/playground/resources/sass/data-tables.scss */"./resources/sass/data-tables.scss");
+__webpack_require__(/*! /home/vagrant/playground/resources/sass/data-tables-tailwind-ui.scss */"./resources/sass/data-tables-tailwind-ui.scss");
 module.exports = __webpack_require__(/*! /home/vagrant/playground/resources/sass/app.scss */"./resources/sass/app.scss");
 
 

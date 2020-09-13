@@ -24,7 +24,8 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.5/css/responsive.dataTables.min.css">
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/responsive/2.2.5/js/dataTables.responsive.min.js"></script>
 
-    <link href="{{ asset('css/data-tables.css') }}" rel="stylesheet">
+    {{-- <link href="{{ asset('css/data-tables.css') }}" rel="stylesheet"> --}}
+    <link href="{{ asset('css/data-tables-tailwind-ui.css') }}" rel="stylesheet">
 </head>
 
 <body class=bg-gray-100>

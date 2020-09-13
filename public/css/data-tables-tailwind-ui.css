@@ -1,0 +1,94 @@
+/* Input fields*/
+
+.dataTables_wrapper select,
+.dataTables_wrapper .dataTables_filter input {
+  --text-opacity: 1;
+  color: #4a5568;
+  color: rgba(74, 85, 104, var(--text-opacity));
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  line-height: 1.25;
+  border-width: 2px;
+  --border-opacity: 1;
+  border-color: #edf2f7;
+  border-color: rgba(237, 242, 247, var(--border-opacity));
+  --bg-opacity: 1;
+  background-color: #edf2f7;
+  background-color: rgba(237, 242, 247, var(--bg-opacity));
+  border-radius: 0.25rem;
+}
+
+/* Filter field */
+
+.dataTables_filter {
+  margin-left: auto;
+}
+
+.dataTables_filter input {
+  margin-left: 0.5rem;
+}
+
+/* Number of results input */
+
+.dataTables_length select {
+  cursor: pointer;
+}
+
+/* Processing layover */
+
+.dataTables_processing {
+  margin-left: auto;
+  margin-right: auto;
+  position: fixed;
+  display: block;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  text-align: center;
+  --bg-opacity: 1;
+  background-color: #edf2f7;
+  background-color: rgba(237, 242, 247, var(--bg-opacity));
+  z-index: 50;
+}
+
+/* Row Hover */
+
+table.dataTable.hover tbody tr:hover,
+table.dataTable.display tbody tr:hover {
+  --bg-opacity: 1;
+  background-color: #ebf4ff;
+  background-color: rgba(235, 244, 255, var(--bg-opacity));
+}
+
+/* Pagination bloc */
+
+.dataTables_paginate {
+  margin-left: auto;
+}
+
+/* Pagination Buttons */
+
+/* Pagination Buttons - Current selected */
+
+/* Pagination Buttons - Disabled */
+
+/* Pagination Buttons - Hover */
+
+/* Add padding to bottom border */
+
+/* Change colour of responsive icon*/
+
+table.dataTable.dtr-inline.collapsed > tbody > tr[role=row] > td.dtr-control:before,
+table.dataTable.dtr-inline.collapsed > tbody > tr[role=row] > th.dtr-control:before {
+  --bg-opacity: 1;
+  background-color: #667eea;
+  background-color: rgba(102, 126, 234, var(--bg-opacity));
+}
+
+table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td.dtr-control:before,
+table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th.dtr-control:before {
+  --bg-opacity: 1;
+  background-color: #fc8181;
+  background-color: rgba(252, 129, 129, var(--bg-opacity));
+}
