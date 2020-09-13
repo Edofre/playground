@@ -31,6 +31,12 @@ table.dataTable.display tbody tr:hover {
     @apply bg-indigo-100;
 }
 
+/* Showing .. to .. of .. entries */
+.dataTables_info {
+    @apply mt-auto;
+    @apply text-sm leading-5 text-gray-700;
+}
+
 /* Pagination bloc */
 .dataTables_paginate {
     @apply ml-auto;
