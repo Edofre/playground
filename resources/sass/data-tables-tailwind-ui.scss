@@ -60,7 +60,7 @@ table.dataTable.display tbody tr:hover {
     @apply relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm leading-5 font-medium text-gray-500 transition ease-in-out duration-150;
 
     &:hover {
-        @apply text-gray-400;
+        @apply bg-indigo-400 text-white;
     }
 
     &:focus {
@@ -73,7 +73,7 @@ table.dataTable.display tbody tr:hover {
     @apply -ml-px relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm leading-5 font-medium text-gray-700 transition ease-in-out duration-150;
 
     &:hover {
-        @apply text-gray-500;
+        @apply bg-indigo-400 text-white;
     }
 
     &:focus {
@@ -83,7 +83,7 @@ table.dataTable.display tbody tr:hover {
 
 /* Pagination Buttons - Current selected */
 .dataTables_wrapper .dataTables_paginate .paginate_button.current {
-    @apply bg-gray-100 text-gray-700;
+    @apply bg-indigo-500 text-white;
 }
 
 /* Pagination Buttons - Disabled */
