@@ -1,9 +1,9 @@
 @extends('layouts.data-tables')
 
-@section('title', __('data-tables.data_tables'))
+@section('title', __('DataTables'))
 
 @section('content')
-<h1 class="text-xl font-bold mb-2 text-gray-900">DataTables</h1>
+<h1 class="text-xl font-bold mb-2 text-gray-900">{{ __('DataTables') }}</h1>
 
 <div class="flex flex-col">
     <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
