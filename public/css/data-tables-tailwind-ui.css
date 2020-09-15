@@ -52,6 +52,8 @@
   z-index: 50;
 }
 
+/* Actual DataTable */
+
 /* Row Hover */
 
 table.dataTable.hover tbody tr:hover,
