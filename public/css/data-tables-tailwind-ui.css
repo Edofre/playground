@@ -54,6 +54,34 @@
 
 /* Actual DataTable */
 
+table.dataTable {
+  /* 
+      divide-y not working with apply yet
+      @apply min-w-full divide-y divide-gray-200;
+  */
+}
+
+table.dataTable th.sorting,
+table.dataTable th.sorting_asc,
+table.dataTable th.sorting_desc {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  --bg-opacity: 1;
+  background-color: #f9fafb;
+  background-color: rgba(249, 250, 251, var(--bg-opacity));
+  text-align: left;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 500;
+  --text-opacity: 1;
+  color: #6b7280;
+  color: rgba(107, 114, 128, var(--text-opacity));
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
 /* Row Hover */
 
 table.dataTable.hover tbody tr:hover,
