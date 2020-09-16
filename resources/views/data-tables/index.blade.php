@@ -20,7 +20,7 @@
                             <th>Salary</th>
                         </tr>
                     </thead>
-                    <tbody class="bg-white divide-y divide-gray-200">
+                    <tbody class="divide-y divide-gray-200">
                     </tbody>
                 </table>
             </div>
@@ -36,12 +36,12 @@
         var table = $('#example').DataTable({
             responsive: true,
             stateSave: true,
-            dom: '<"flex mb-2"lf><"flex justify-center"r>t<"flex mt-2"ip>',
+            dom: '<"flex mb-2"lf>rt<"flex mt-2"ip>',
             processing: true,
             serverSide: true,
             ajax: '{{ route('data-tables.data') }}',
             language: {
-                processing: '<i class="fas fa-spinner fa-spin mr-1"></i> Processing...'
+                processing: '<div class="dataTables_processing_wrapped"><i class="fas fa-spinner fa-spin mr-1"></i> Processing...</div>'
             },
             columns: [
                 { data: 'name', name: 'name' },
@@ -55,7 +55,9 @@
             .columns.adjust()
             .responsive.recalc();
 
-        table.processing(true);
+        table.on( 'processing.dt', function ( e, settings, processing ) {
+            $('#example_processing').css('display', processing ? 'flex' : 'none');
+        } )
     });
 
 </script>
