@@ -27,10 +27,7 @@
 
 /* Actual DataTable */
 table.dataTable {
-    /* 
-        divide-y not working with apply yet
-        @apply min-w-full divide-y divide-gray-200;
-    */
+    @apply min-w-full;
 
     th.sorting_asc:after {
         font-family: "Font Awesome 5 Free";
@@ -59,12 +56,22 @@ table.dataTable {
     th.sorting_desc {
         @apply px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider;
     }
+
+    tbody {
+        @apply bg-white;
+    }
+
+    tr {
+        td {
+            @apply px-6 py-4 whitespace-no-wrap;
+        }
+    }
 }
 
 
 
 /* Row Hover */
-table.dataTable.hover tbody tr:hover,
+table.dataTable tbody tr:hover,
 table.dataTable.display tbody tr:hover {
     @apply bg-indigo-100;
 }

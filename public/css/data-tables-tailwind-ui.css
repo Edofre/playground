@@ -57,10 +57,7 @@
 /* Actual DataTable */
 
 table.dataTable {
-  /* 
-      divide-y not working with apply yet
-      @apply min-w-full divide-y divide-gray-200;
-  */
+  min-width: 100%;
 }
 
 table.dataTable th.sorting_asc:after {
@@ -106,9 +103,23 @@ table.dataTable th.sorting_desc {
   letter-spacing: 0.05em;
 }
 
+table.dataTable tbody {
+  --bg-opacity: 1;
+  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, var(--bg-opacity));
+}
+
+table.dataTable tr td {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  white-space: nowrap;
+}
+
 /* Row Hover */
 
-table.dataTable.hover tbody tr:hover,
+table.dataTable tbody tr:hover,
 table.dataTable.display tbody tr:hover {
   --bg-opacity: 1;
   background-color: #e5edff;
