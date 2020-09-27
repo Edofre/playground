@@ -24,6 +24,7 @@
 .dataTables_processing {
     @apply flex fixed w-full h-full top-0 left-0 items-center justify-center;
 }
+
 /* Processing layover wrapped */
 .dataTables_processing_wrapped {
     @apply mx-auto fixed block rounded p-2 text-center bg-gray-200 z-50;
@@ -69,6 +70,10 @@ table.dataTable {
         td {
             @apply px-6 py-4 whitespace-no-wrap;
         }
+    }
+
+    tr.even {
+        @apply bg-gray-50;
     }
 }
 

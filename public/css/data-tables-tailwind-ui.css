@@ -130,6 +130,12 @@ table.dataTable tr td {
   white-space: nowrap;
 }
 
+table.dataTable tr.even {
+  --bg-opacity: 1;
+  background-color: #f9fafb;
+  background-color: rgba(249, 250, 251, var(--bg-opacity));
+}
+
 /* Row Hover */
 
 table.dataTable tbody tr:hover,
