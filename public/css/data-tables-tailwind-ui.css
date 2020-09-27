@@ -114,6 +114,7 @@ table.dataTable th.sorting_desc {
   color: rgba(107, 114, 128, var(--text-opacity));
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  cursor: pointer;
 }
 
 table.dataTable tbody {

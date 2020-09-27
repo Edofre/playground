@@ -59,7 +59,7 @@ table.dataTable {
     th.sorting,
     th.sorting_asc,
     th.sorting_desc {
-        @apply px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider;
+        @apply px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider cursor-pointer;
     }
 
     tbody {
